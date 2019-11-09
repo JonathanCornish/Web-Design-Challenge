@@ -13,14 +13,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- The purpose of this project was to analyze how weather changes as you get closer to the equator. To run this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities -->
-
-<!-- After assembling the dataset, we used MatPlotLib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, wind speed, cloudiness, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends/correlations we observed. -->
-
 <body>
 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="column">
                 <div class="btn-group">
@@ -29,14 +25,14 @@
                     <span class="sr-only">Toggle Dropdown</span>
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Visualization_1</a>
-                        <a class="dropdown-item" href="#">Visualization_2</a>
-                        <a class="dropdown-item" href="#">Visualization_3</a>
-                        <a class="dropdown-item" href="#">Visualization_4</a>
+                        <a class="dropdown-item" href="Vis_3.html">Visualization_1</a>
+                        <a class="dropdown-item" href="Vis_3.html">Visualization_2</a>
+                        <a class="dropdown-item" href="Vis_3.html">Visualization_3</a>
+                        <a class="dropdown-item" href="Vis_3.html">Visualization_4</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Comparison</a>
+                        <a class="dropdown-item" href="Vis_3.html">Comparison</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Data</a>
+                        <a class="dropdown-item" href="Vis_3.html">Data</a>
                     </div>
                 </div>
             </div>
@@ -47,76 +43,36 @@
 
     <!-- Our rows function in containers (grid created). -->
     <div class="container">
-            <h1>Latitude vs X</h1>
-            <!--Normally these medium columns go full wide on small screen sizes-->
-            <div class="row">
-              <div class="col-md-3">
-                <div class="box skyblue">INSERT THE IMAGE HERE...</div>
+            <section class="row">
+              <div class="col-md-8">
+                <article class="description-content">
+                  <h1 class="description-header">Summary: Latitude vs. X</h1>
+                  <hr class="description-hr"/>
+                  <img src="assets/images/Fig1.png" alt="" id="description-image"/>
+                  <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                  <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </article>
               </div>
-              <div class="col-md-3">
-                <div class="box skyblue">The purpose of this project was to analyze how weather changes as you get closer to the equator. To run this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</div>
+              <div class="col-md-4">
+                <!-- Start of Visualizations imageNav Area -->
+                <section id="imageNav-area">
+                  <div class="imageNav-content">
+                    <h2 class="imageNav-header">Visualizations</h2>
+                    <hr />
+                    <div id="images">
+                      <a href="visualizations/temp.html"><img src="assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+                      <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                      <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                      <a href="visualizations/wind.html"><img src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+                    </div>
+                  </div>
+                </section>
+                <!-- End of the Visualizations imageNav Area -->
               </div>
-              <div class="col-md-6">
-                <div class="box skyblue">Visualizationssssss...</div>
-              </div>
-            </div>
-        
-            <!--These col-md-3 columns go half wide when on a small screen and full on extra small-->
-            <div class="row">
-              <div class="col-sm-6 col-md-3">
-                <div class="box purple">col-sm-6 col-md-3</div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="box purple">col-sm-6 col-md-3</div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="box purple">col-sm-6 col-md-3</div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="box purple">col-sm-6 col-md-3</div>
-              </div>
-            </div>
-        <!--
-            These are full wide on a medium screen, half wide on a small screen, 1/4 wide on an extra small screen-->
-            <div class="row">
-              <div class="col-3 col-sm-6 col-md-12">
-                <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-              </div>
-              <div class="col-3 col-sm-6 col-md-12">
-                <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-              </div>
-              <div class="col-3 col-sm-6 col-md-12">
-                <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-              </div>
-              <div class="col-3 col-sm-6 col-md-12">
-                <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-              </div>
-            </div>
-        </div>
+            </section>
+          </div>    
 
 
-  <!-- Creates the Overall Grid -->
-  <div class="container">
-
-    <!-- First Row -->
-    <div class="row">
-
-      <!-- First (and only column) -->
-      <div class="col-md-12">
-        <h1>Summary: Latitude vs X.</h1>
-      </div>
-    </div>
-
-    <!-- Second Row -->
-    <div class="row">
-
-      <!-- First of two columns -->
-      <div class="col-md-6">
-        <h1>After assembling the dataset, we used MatPlotLib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, wind speed, cloudiness, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends/correlations we observed.</h1>
-      </div>
-
-
-  </div>
 
   <nav aria-label="Page navigation example">
         <ul class="pagination">

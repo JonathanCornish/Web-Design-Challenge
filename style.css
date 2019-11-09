@@ -17,4 +17,6 @@
   .red {
     background: indianred;
   }
-  
+.blue_text {
+    color: rgb(0, 204, 255);
+}  
