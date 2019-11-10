@@ -1,1 +1,96 @@
-<h1>Visualization_3</h1>
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude vs Cloudiness</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Creating the buttons on the top of the page -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="column">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-dark">Menu</button>
+                    <button type="button" class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Vis_1.html">Lat vs Temp.</a>
+                        <a class="dropdown-item" href="Vis_2.html">Lat vs Hum.</a>
+                        <a class="dropdown-item" href="Vis_3.html">Lat vs Cloud.</a>
+                        <a class="dropdown-item" href="Vis_4.html">Lat vs Wind</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Comp.html">Comparison</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Data.html">Data</a>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        
+    </div>
+
+    <!-- Container grid created (columns inside of rows inside of container...) -->
+    <div class="container">
+            <section class="row">
+              <div class="col-md-8">
+                <article class="description-content">
+                  <h1 class="description-header">Latitude vs Cloudiness</h1>
+                  <hr class="description-hr"/>
+                  <img src="Resources/Images/fig1.png" alt="" id="Latitude vs Max Temperature"/>
+                  <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                  <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <!-- Visualizations  -->
+                <section id="imageNav-area">
+                  <div class="imageNav-content">
+                    <h2 class="imageNav-header">Visualizations</h2>
+                    <hr />
+                    <div id="images">
+                      <a href="Vis_1.html"><img src="Resources/Images/fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+                      <a href="Vis_2.html"><img src="Resources/Images/fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                      <a href="Vis_3.html"><img src="Resources/Images/fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                      <a href="Vis_4.html"><img src="Resources/Images/fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+                    </div>
+                  </div>
+                </section>
+                <!-- End of the Visualizations imageNav Area -->
+              </div>
+            </section>
+          </div>    
+
+
+
+  <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="Vis_2.html">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="index.html">Home</a></li>
+          <li class="page-item"><a class="page-link" href="Vis_1.html">Temp.</a></li>
+          <li class="page-item"><a class="page-link" href="Vis_2.html">Hum.</a></li>
+          <li class="page-item"><a class="page-link" href="Vis_3.html">Cloud</a></li>
+          <li class="page-item"><a class="page-link" href="Vis_4.html">Wind</a></li>
+          <li class="page-item"><a class="page-link" href="Comp.html">Comp.</a></li>
+          <li class="page-item"><a class="page-link" href="Data.html">Data</a></li>
+          <li class="page-item"><a class="page-link" href="Vis_4.html">Next</a></li>
+        </ul>
+      </nav> 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
